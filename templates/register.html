@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>register</title>
+  <script src="https://kit.fontawesome.com/79b4641bc2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/static/home.css">
+  <link rel="stylesheet" href="/static/signup.css">
+</head>
+
+<body>
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        Takshila <i class="fa-solid fa-school"></i>
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+
+    <div class="nav-links">
+      <a href="./">Home</a>
+      <a href="./about">About</a>
+      <a href="./services">services</a>
+      <a href="./contact">Contact us</a>
+      <a href="./quiz">Quiz</a>
+    </div>
+  </div>
+  <section>
+    <div class="container">
+    <form class="p-3 mt-3" action="/register" method="POST">
+      {%csrf_token%}
+        <h1 style="color:brown ;">Data</h1>
+        <h2>Fill in this form for Regarding Your Further Updates.</h2>
+        <hr>
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Your Name" name="name" required>
+
+        <label for="name"><b>Qualification</b></label>
+        <input type="text" placeholder="Enter Your Qualification" name="qualification" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" name="email" required>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label for="repassword"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password"  name="rpsw" required>
+
+        <label for="Class"><b>Class</b></label>
+        <input type="text" placeholder="Enter Your Class in which you want to study" name="class" required>
+
+        <label for="age"><b>Age</b></label>
+        <input type="text" placeholder="Enter Your Age" name="age" required>
+
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        <div class="message">{{msg}}</div>
+        <div class="clearfix">
+          <!-- <button type="button" class="cancelbtn">Cancel</button>-->
+          <button type="submit" class="signupbtn">Submit</button>
+        </div>
+
+      </div>
+    </form>
+  </section>
+</body>
+
+</html>

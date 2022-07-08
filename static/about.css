@@ -1,0 +1,125 @@
+*{
+  background-image: url("/static/img/");
+  margin:auto;
+}
+.goal{
+  /*margin: 1px;*/
+  padding: 50px;
+  width: 100%;
+  height:200px;
+ background-image: url(/static/img/1.jpg);
+  color: white;
+}
+.goal h2{
+  color: aqua;
+  text-align: center;
+}
+.goal h4{
+  color: white;
+
+  text-align: right;
+  padding: 30px;
+  
+}
+
+.goal h5{
+  text-align:right;
+  font-family:monospace;
+  font-size: x-large;
+  color: rgb(130, 176, 176);
+}
+
+.goal p{
+  text-align:right;
+  font-family:ui-serif;
+}
+ .abt{
+  background-image: url(/static/img/1.jpg);
+  width:100%;
+height: 300px;
+text-align: center;
+font-family:cursive;
+font-style: italic;
+display: inline-block;
+}
+.abtinitiative{
+  background-color: black; 
+  padding: 50px;
+  color: aqua;
+  text-align: center;
+  font-family: cursive;
+  font-size: medium;
+}
+.left{
+display: flex;
+flex-direction: row;
+}
+.abt h3{
+  color:aqua;
+  padding: 20px;
+}
+
+.abt h2{
+  color:aqua;
+  margin: 0px;
+  padding: 30px;
+}
+.abt h2 h3{
+  color:white;
+  padding: 5px;
+}
+.abt .left h3{
+  color: white;
+  font-family:monospace;
+}
+.left img{
+  border-radius: 45%;
+}
+footer{
+  background-color: black;
+  color: white;  
+  width: 100%;
+  height: auto;
+  font-family:cursive;
+  font-size: smaller
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.foot{
+  justify-content: center;
+  text-align: center;
+}
